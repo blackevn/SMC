@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <script defer src="script.js"></script>
+    <title>Login Page</title>
+</head>
+<body class="bg-gray-100 h-screen flex items-center justify-center">
+    <div class="bg-white p-8 rounded shadow-md w-96">
+        <div class="w-full bg-gray-400 rounded-xl btn my-4">
+            <h1>Username: user1</h1>
+            <h1>Password: pass1</h1>
+        </div>
+        <h2 class="text-2xl font-bold mb-4">Login</h2>
+        <form id="loginForm">
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="username">Username:</label>
+                <input class="border rounded w-full py-2 px-3" type="text" id="username" name="username" required>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="password">Password:</label>
+                <input class="border rounded w-full py-2 px-3" type="password" id="password" name="password" required>
+            </div>
+            <button class="w-full btn bg-blue-500 text-white" type="button" onclick="login()">Login</button>
+        </form>
+        <p id="error" class="text-red-500 mt-4"></p>
+        <a href="index.html"><button class="w-full btn ">Home</button></a>
+
+    </div>
+    
+
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
